@@ -13,8 +13,8 @@ public class Question{
         return text;
     }
 
-    public boolean checkAnswer(String userAnswer){
-        return (userAnswer.trim().equalsIgnoreCase(correctAnswer));
-    }
+   public boolean checkAnswer(String userAnswer) {
+    return correctAnswer.equalsIgnoreCase(userAnswer.trim());
+}
     
 }

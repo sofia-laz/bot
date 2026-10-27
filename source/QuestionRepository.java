@@ -7,7 +7,7 @@ public class QuestionRepository {
     private List<Question> questions = new ArrayList<>();
     
     public QuestionRepository(){
-        questions.add(new Question("Какой металл жидкий при комнатной температуре?", "Ртуть"));
+        questions.add(new Question("Capital of France?", "Paris"));
         questions.add(new Question("Какая планета ближе всего к Солнцу?", "Меркурий"));
         questions.add(new Question("Столица Франции?", "Париж"));
         questions.add(new Question("Какая планета самая большая в Солнечной системе?", "Юпитер"));
