@@ -33,6 +33,7 @@ public class QuizLogic {
         }
 
         StringBuilder response = new StringBuilder();
+        //System.out.println("DEBUG: Я ввел [" + input + "], правильный ответ [" + q.getText() + "]");
         if (q.checkAnswer(input)) {
             session.incrementScore();
             response.append("Верно! ");

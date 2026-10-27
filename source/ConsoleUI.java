@@ -1,7 +1,7 @@
 package source;
-import java.util.Scanner;
 
 import java.util.Scanner;
+
 
 public class ConsoleUI {
     private final QuizLogic quizLogic;
@@ -12,8 +12,10 @@ public class ConsoleUI {
     public ConsoleUI(QuizLogic quizLogic, SessionManager sessionManager, String userId) {
         this.quizLogic = quizLogic;
         this.sessionManager = sessionManager;
-        this.scanner = new Scanner(System.in);
         this.currentUserId = userId;
+        
+        // Принудительно указываем сканеру читать ввод в кодировке UTF-8
+        this.scanner = new Scanner(System.in, "Cp866");//изменили кодировку
     }
 
     public void run() {
