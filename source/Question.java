@@ -9,7 +9,7 @@ public class Question{
         this.correctAnswer=answer;
     }
 
-    public String getQuestion(){
+    public String getText(){
         return text;
     }
 
